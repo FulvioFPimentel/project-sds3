@@ -14,7 +14,7 @@ const Pagination = ({ page, onPageChance }: Props) => {
                         <button className="page-link" onClick={() => onPageChance(page.number - 1)}>Anterior</button>
                     </li>
                     <li className="page-item disabled">
-                        <span className="page-link">{page.number + 1}</span>
+                        <span className="page-link">{page.number + 1} / {page.totalPages}</span>
                     </li>
                     <li className={`page-item ${page.last ? 'disabled' : ''}`}>
                         <button className="page-link" onClick={() => onPageChance(page.number + 1)}>Próxima</button>
